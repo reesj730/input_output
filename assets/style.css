@@ -1,0 +1,98 @@
+
+
+
+body {
+	font-family: 'EB Garamond', serif;
+	margin: 0;
+	background: lightsalmon;
+	color: rgb(75, 4, 0);
+	font-size: 1.5rem;
+}
+
+h1	{
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 5rem;
+	letter-spacing: -0.5rem;
+	line-height: 90%;
+	margin: 0;
+	padding: 1%;
+	background: deepskyblue;
+	color: seashell;
+}
+
+hr {
+	border: none;
+	height: 1rem;
+	margin: 0;
+	background: bisque;
+}
+
+label {
+	display: inline-block;
+	margin-bottom: 5%;
+	width: 13rem;
+}
+ 
+span {
+	color: firebrick;
+	font-size: 110%;
+}
+
+select {
+	border: none;
+	font-family: 'Quicksand', sans-serif;
+	background: seashell;
+	font-size: 1rem;
+}
+
+input {
+	border: none;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.1rem;
+	width: 10rem;
+	text-align: center;
+	background-color: seashell;
+}
+
+button {
+  padding:5px;
+  background-color: rgb(75, 4, 0);
+  border: none;
+  color: bisque;
+  font-family: 'Quicksand', sans-serif;
+  border-radius: 1rem;
+  padding: 0.3rem 0.5rem;
+  font-size: 0.8rem;
+}
+
+button:hover {
+	background-color: firebrick;
+}
+
+#chooseAgain {
+	margin-right: 2rem;
+}
+
+.hidden {
+	display:none;
+}
+
+#finishedStory p {
+	text-align: justify;
+	padding: 0 10%;
+	text-indent: 2rem;
+}
+
+#container {
+	margin: 0 auto;
+	max-width: 700px;
+	padding: 20px;
+	text-align: center;
+}
+
+#footer {
+	font-size: 50%; 
+	text-align: center;
+	margin: 10% auto 0 auto;
+}
