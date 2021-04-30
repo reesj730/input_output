@@ -1,27 +1,21 @@
 
-//Source Code: 'Mad Libs' Codepen by Mackenzie Turner//
+//Original Source Code: 'Mad Libs' Codepen by Mackenzie Turner//
 
-//select buttons for event listeners
 var getStoryButton = document.querySelector("#getStory");
 var resetButton = document.querySelector("#reset");
 var getFormButton = document.querySelector("#getForm");
 var chooseAgain = document.querySelector("#chooseAgain");
 
-// select div sections for showing/hiding
 var selectStory = document.querySelector("#selectStory");
 var storyForm = document.querySelector("#storyForm");
 var finshedStory = document.querySelector("#finishedStory");
 
-//select input div for populating the list/clearing the list 
 var inputs = document.querySelector("#storyForm div");
 
-//select the user's choice for story from dropdown
 var chosenStory = document.querySelector("select");
 
-//establish visibity of story
 var storyVisible = false;
 
-//array containing data for each story
 var story = {
 	love: [
 			[
@@ -102,7 +96,7 @@ var story = {
 		]
 };
 
-//hide selection dropdown and show generated form for user word inputs
+
 getFormButton.addEventListener("click", function(){
 	makeForm();
 
@@ -117,7 +111,7 @@ chooseAgain.addEventListener("click", function(){
 	inputs.innerHTML = "";
 });
 
-//generate story, hide form and show finished story
+
 getStoryButton.addEventListener("click", function(){
 	storyVisible = true;
 
@@ -125,7 +119,7 @@ getStoryButton.addEventListener("click", function(){
 	showHideStory();
 });
 
-//reset button to try again!
+
 resetButton.addEventListener("click", function () {
 	storyVisible = false;
 
@@ -134,7 +128,7 @@ resetButton.addEventListener("click", function () {
 	inputs.innerHTML = "";
 });
 
-// generate form based on selected story from dropdown
+
 function makeForm(){
 		var storyChoice = story[chosenStory.value][0];
 
@@ -143,18 +137,17 @@ function makeForm(){
 		}
 }
 
-//use user inputted words to build story from base text 
+
 function makeStory(){
 	var wordSlots = document.querySelectorAll(story[chosenStory.value][2]);
 	var inputWords = document.querySelectorAll("input");
 
-	//set answers in the form to corresponding span slot in story
 	for(var i = 0; i < wordSlots.length; i++){
 		wordSlots[i].textContent = inputWords[i].value;
 	}
 }
 
-//alter the visibility of text sections depending on if story shoud be seen or app reset 
+
 function showHideStory(){
 	var storyText = document.querySelector(story[chosenStory.value][1]);
 
