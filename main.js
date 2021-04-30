@@ -23,58 +23,60 @@ var storyVisible = false;
 
 //array containing data for each story
 var story = {
-	bear: [
+	love: [
 			[
+				"Noun (plural)",
+				"Noun",
+				"Verb",
+				"Noun",
+				"Noun (plural)",
+				"Color (plural)",
+				"Part of the Body",
+				"Part of the Body",
+				"Noun (plural)",
+				"Verb (plural)",
+				"Noun",
+				"Noun",
+				"Verb",
+				"Number",
+				"Noun",
+				"Verb (ending -ing)",
+				"Name",
+				"Adjective",
 				"Adjective",
 				"Noun",
-				"Plural noun",
-				"Adjective",
-				"Adjective",
-				"Verb (ending -ing)",
-				"Verb (ending -ing)",
-				"Adjective",
-				"Adjective",
-				"Noun",
-				"Food (plural)",
-				"Part of the body (plural)",
-				"Adjective",
-				"Vehicle",
-				"Food (plural)",
-				"Food (plural)",
-				"Something alive (plural)",
-				"Something alive (plural)",
-				"Adverb",
-				"Noun"
+				"Adverb"
 			],
-			"#bearText",
-			"#bearText span"
+			"#loveText",
+			"#loveText span"
 		],
-	book: [
+	fate: [
 			[
-				"Adjective",
-				"Noun",
-				"Plural noun",
-				"Person in room (female)",
+				"Noun (plural)",
+				"Verb",
+				"Verb",
+				"Verb",
 				"Adjective",
 				"Article of clothing",
 				"Noun",
-				"City",
-				"Plural noun",
+				"Verb (past tense)",
+				"Noun",
+				"Verb (past tense)",
+				"Noun (plural)",
+				"Noun",
+				"Verb",
 				"Adjective",
-				"Part of the body",
-				"Letter of the alphabet",
-				"Celebrity",
-				"Plural Noun",
-				"Adjective",
+				"Noun",
+				"Verb",
 				"Place",
-				"Part of the body",
-				"Adjective",
-				"Genre"
+				"Noun",
+				"Noun (plural)",
+				"Noun"
 			],
-			"#bookText",
-			"#bookText span"
+			"#fateText",
+			"#fateText span"
 		],
-	dentist: [
+	destiny: [
 			[
 				"Plural noun",
 				"Person in room<br>(last name)",
@@ -95,8 +97,8 @@ var story = {
 				"Adjective",
 				"Noun"
 			],
-			"#dentistText",
-			"#dentistText span"
+			"#destinyText",
+			"#destinyText span"
 		]
 };
 
