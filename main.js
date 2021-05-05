@@ -131,6 +131,8 @@ chooseAgain.addEventListener("click", function(){
 getStoryButton.addEventListener("click", function(){
 	storyVisible = true;
 
+	document.body.style.background = "black";
+
 	document.getElementById('frame_input').className = "hidden";
 	document.getElementById('frame_final').className = "show";
 
@@ -425,8 +427,7 @@ function newColor() {
 }
 
 
-//Save image on click
-
+//save
 saveButton.addEventListener('click', function() {
         html2canvas(document.body, {
         	//html2canvas(document.querySelector("#finishedStory"), {
