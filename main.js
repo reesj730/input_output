@@ -110,6 +110,7 @@ getFormButton.addEventListener("click", function(){
     document.getElementById('sparkle').className = "hidden";
     document.getElementById('frame_final').className = "hidden";
     document.getElementById('frame_input').className = "show";
+    document.getElementById('sky').className = "show";
 
 	storyForm.classList.remove("hidden");
 });
@@ -120,8 +121,6 @@ chooseAgain.addEventListener("click", function(){
 	document.getElementById('sparkle').className = "show";
 	document.getElementById('frame_input').className = "hidden";
 	document.getElementById('frame_final').className = "hidden";
-
-	document.body.style.backgroundColor = '#5B1C17';
     
 	storyForm.classList.add("hidden");
 
@@ -134,7 +133,6 @@ getStoryButton.addEventListener("click", function(){
 
 	document.getElementById('frame_input').className = "hidden";
 	document.getElementById('frame_final').className = "show";
-	document.body.style.backgroundColor = 'black';
 
 	makeStory();
 	showHideStory();
@@ -148,8 +146,6 @@ resetButton.addEventListener("click", function () {
 	document.getElementById('frame_final').className = "hidden";
 	document.getElementById('crystal_ball').className = "show";
 	document.getElementById('sparkle').className = "show";
-
-	document.body.style.backgroundColor = '#5B1C17';
 
 	showHideStory();
 

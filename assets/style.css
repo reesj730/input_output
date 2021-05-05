@@ -3,10 +3,33 @@
 body {
 	margin: 0;
 	padding: 0;
-	background: #5B1C17;
 	height: 56.25rem;
 	width: 90rem;
 	overflow: scroll;
+}
+
+#canvas {
+   overflow: hidden;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   height: 900px;
+}
+
+#canvas #sky {
+   height: 300%;
+   width: 300%;
+   position: absolute;
+   top: -100%;
+   left: -100%;
+   margin-top: 50%;
+   background-color: darkblue;
+   background: -webkit-radial-gradient(center, #5B1C17 0%, #000 60%);
+   -webkit-animation: rotate 250s infinite linear;
+   -webkit-backface-visibility: hidden;
+   -webkit-transform-style: preserve-3d;
 }
 
 
@@ -137,7 +160,9 @@ button {
 }
 
 button:hover {
-	background-color: white;
+	background-color: #000046;
+	color: white;
+	border: 1px solid white; 
 }
 
 #chooseAgain {
