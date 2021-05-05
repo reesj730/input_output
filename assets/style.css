@@ -1,23 +1,78 @@
 
 
 body {
-	font-family: 'EB Garamond', serif;
 	margin: 0;
-	background: white;
-	color: rgb(75, 4, 0);
-	font-size: 1.5rem;
+	padding: 0;
+	background: #5B1C17;
+	height: 56.25rem;
+	width: 90rem;
+	overflow: scroll;
 }
 
-h1	{
-	text-align: center;
-	font-family: 'Quicksand', sans-serif;
-	font-size: 5rem;
-	letter-spacing: -0.5rem;
-	line-height: 90%;
-	margin: 0;
-	padding: 1%;
-	background: deepskyblue;
-	color: seashell;
+
+#frame_input{
+	position: absolute;
+	width: 90rem;
+	height: 56.25rem;
+    animation: svg-shadow 3s ease-in-out infinite alternate;
+}
+
+@keyframes svg-shadow {
+  from {
+    filter: drop-shadow( 0 0 5px #fff) drop-shadow( 0 0 5px white) drop-shadow( 0 0 15px white);
+  }
+
+  to {
+    
+    filter: drop-shadow( 0 0 20px #fff) drop-shadow( 0 0 35px white) drop-shadow( 0 0 60px white);
+  }
+}
+
+#frame_final{
+	position: absolute;
+	width: 90rem;
+	height: 56.25rem;
+}
+
+#crystal_ball{
+	position: absolute;
+	width: 90rem;
+	height: 56.25rem;
+}
+
+#sparkle{
+	position: absolute;
+	width: 90rem;
+	height: 56.25rem;
+    animation: svg-shadow 3s ease-in-out infinite alternate;
+}
+
+@keyframes svg-shadow {
+  from {
+    filter: drop-shadow( 0 0 5px #fff) drop-shadow( 0 0 10px #5B1C17) drop-shadow( 0 0 15px #5B1C17);
+  }
+
+  to {
+    
+    filter: drop-shadow( 0 0 30px #fff) drop-shadow( 0 0 25px #5B1C17) drop-shadow( 0 0 60px #5B1C17);
+  }
+}
+
+
+h1{
+	font-family: Flower Power;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 4.375rem;
+
+	color: #FFFFFF;
+}
+
+p{
+	font-family: Sanvito Pro;
+	font-weight: 600;
+	font-size: 1.8rem;
+	line-height: auto;
 }
 
 hr {
@@ -29,64 +84,225 @@ hr {
 
 label {
 	display: inline-block;
-	margin-bottom: 5%;
+	margin-bottom: 2.5%;
+	margin-right: 5%;
 	width: 13rem;
 }
  
 span {
-	color: firebrick;
+	color: #D6C79A;
 	font-size: 110%;
 }
 
 select {
 	border: none;
-	font-family: 'Quicksand', sans-serif;
 	background: seashell;
-	font-size: 1rem;
+	font-family: Sanvito Pro;
+	font-weight: 600;
+	font-size: 2.25rem;
+	line-height: 3.125rem;
+	padding: 0.125rem;
+	width: 12.5rem;
 }
 
 input {
 	border: none;
-	font-family: 'Quicksand', sans-serif;
-	font-size: 1.1rem;
-	width: 10rem;
+	font-family: Sanvito Pro;
+	font-size: 1.5rem; 
+	width: 13rem;
 	text-align: center;
 	background-color: seashell;
 }
 
 button {
-  padding:5px;
-  background-color: rgb(75, 4, 0);
+  padding: 0.313rem;
+  background-color: #D6C79A;
   border: none;
-  color: bisque;
-  font-family: 'Quicksand', sans-serif;
-  border-radius: 1rem;
-  padding: 0.3rem 0.5rem;
-  font-size: 0.8rem;
+
+  font-family: Flower Power;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 3.125rem;
+  text-align: center;
+  color: #5B1C17;
+
+  border-radius: 2rem;
+  padding: 0.1rem;
+  width: 11.25rem;
+}
+
+#getForm{
+	margin-left: 1.25rem;
 }
 
 button:hover {
-	background-color: firebrick;
+	background-color: white;
 }
 
 #chooseAgain {
-	margin-right: 2rem;
+	position: absolute;
+	left: 250px;
+	margin-top: 3%;
+}
+
+#getStory{
+	position: absolute;
+	left: 480px;
+	margin-top: 3%;
 }
 
 .hidden {
 	display:none;
 }
 
+.show{
+	display:inLine !important;
+}
+
+#storyForm{
+	position: absolute;
+	top: 5rem;
+	width: 60rem;
+	left: 15.625rem;
+	text-align: center;
+}
+
+#labels{
+	font-family: Sanvito Pro;
+	font-weight: 600;
+	font-size: 1.8rem;
+	line-height: 2.2rem;
+	text-align: center;
+
+	color: #FFFFFF;
+}
+
 #finishedStory p {
 	text-align: justify;
-	padding: 0 10%;
+	padding: 0;
 	text-indent: 2rem;
+	color: white;
+}
+
+#finishedStory{
+	position: absolute;
+	left: 20rem;
+	top: 12.5rem;
+	width: 50rem;
+}
+
+#selectStory{
+	position: absolute;
+	top: 20rem;
+	left: 23.5rem;
+	width: 42rem;
+	height: 8.313rem;
 }
 
 #container {
+	position: absolute;
 	margin: 0 auto;
 	max-width: 700px;
 	padding: 20px;
 	text-align: center;
 }
+
+#reset{
+	margin-right: 20px;
+}
+
+#save{
+	margin-left: 20px;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 600px){
+  body{
+  	width: 600px;
+    overflow-y: auto;
+	overflow-x: hidden;
+  }
+
+  /* first page*/
+  h1{
+  	font-size: 250%;
+  	width: 50%;
+  	margin-left: 28%;
+  	margin-top: 18%;
+  }
+
+  #selectStory {
+	width: 450px;
+	left: 10px;
+	text-align: center;
+  }
+
+  #crystal_ball, #sparkle{
+  	width: 500px;
+  }
+
+  select{
+  	position: absolute;
+  	top: 400px;
+  	left: 31%;
+  }
+
+  #getForm{
+  	position: absolute;
+  	top: 480px;
+  	left: 30%;
+  }
+
+  /* Second page */
+  #storyForm {
+    overflow-y: auto;
+	overflow-x: hidden;
+  	width: 480px;
+  	height: 480px;
+  	top: 200px;
+  	left: 0;
+  	padding: 10px;
+  }
+
+  #frame_input{
+  	right: -10px;
+  }
+
+  #labels{
+  	font-size: 150%;
+  }
+
+  input{
+  	width: 80%;
+  }
+
+  #chooseAgain{
+  	margin-top: 5%;
+  	left: 7%;
+  }
+
+  #getStory{
+  	margin-top: 5%;
+    left: 52%;
+  }
+
+  /* Last page */
+  #finishedStory {
+  	width: 300px;
+  	height: 400px;
+  	left: 160px;
+  	top: 230px;
+  	overflow-y: auto;
+	overflow-x: hidden;
+  }
+
+  #save{
+  	margin-top: 8%;
+  	margin-left: -5%;
+  }
+}
+
+
 

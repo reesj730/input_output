@@ -17,14 +17,21 @@
   </head>
   <body>
 
+    <img id="frame_input" class="hidden" alt="circle and line gold frame" src="assets/imgs/frame_input.svg">
+
+    <img id="frame_final" class="hidden" alt="circle and line gold frame" src="assets/imgs/frame_final.svg">
+
+    <img id="crystal_ball" class="show" alt="line drawing of crystal ball" src="assets/imgs/crystal_ball.svg">
+    <img id="sparkle" class="show" alt="light emitted from crystal ball" src="assets/imgs/sparkle.svg">
+
     <div id="container">
     <div id="selectStory">
-      <p>What Is It That You Seek?</p>
+      <h1>What Is It That You Seek?</h1>
 
       <select>
-          <option value="love">Love</option>
-        <option value="fate">Fate</option>
-          <option value="destiny">Destiny</option>
+          <option value="love">Love...</option>
+          <option value="fate">Fate...</option>
+          <option value="destiny">Destiny...</option>
       </select>
 
       <button id="getForm">Proceed</button>
@@ -32,7 +39,7 @@
 
 
     <div id="storyForm" class="hidden">
-        <div></div>
+        <div id="labels"></div>
         <button id="chooseAgain">Reverse</button>
         <button id="getStory">Reveal</button>
     </div>
@@ -40,19 +47,24 @@
     <div id="finishedStory" class="hidden">
 
       <p id="loveText" class="hidden">
-        You have a desire to expand your <span>horizons</span> and apply <span></span> to meaningful connections. You will find yourself struggling to <span></span> in your <span></span> space. These frustrations will see their beginnings in <span></span> and <span></span> as connected to your <span></span> and <span></span>. An endless array of <span></span> and <span></span> will affect your journey to <span></span>. Exercise <span></span>, give things time, and the situation will <span></span> itself into  <span></span> of <span></span>. You don’t have to make up your mind right away, but perhaps with more <span></span> there will be a <span></span> in your life. Remember, to be <span></span>, you must not get out of your <span></span> space or offer love’s <span></span> too <span></span>.
+        When you fall in love, it is a temporary madness. It erupts like an earthquake, and then it subsides. You have a desire to expand your <span>horizons</span> and apply <span></span> to meaningful connections. Love is not breathlessness, it is not excitement. You will find yourself struggling to <span></span> in your <span></span> space. These frustrations will see their beginnings in <span></span> and <span></span> as connected to your <span></span> and <span></span>. An endless array of <span></span> and <span></span> will affect your journey to <span></span>. Exercise <span></span>, give things time, and the situation will <span></span> itself into  <span></span> of <span></span>. You don’t have to make up your mind right away, but perhaps with more <span></span> there will be a <span></span> in your life. Love itself is what is left over, when being in love has burned away. Remember, to be <span></span>, you must not get out of your <span></span> space or offer love’s <span></span> too <span></span>. For that is just being in love. 
       </p>
 
       <p id="fateText" class="hidden">
-        Many <span></span> try to master fate, to make fate conform to exactly what they <span></span>. But, of course, fate doesn't work that way. By trying to <span></span> fate once, you put yourself in the position of having to <span> </span> fate always. At every instant, you will struggle against those <span></span> of the pre-conceived <span></span> that don't favor your <span></span>. Ultimately, you may become so <span></span> with your fate that you seek <span></span> : you will be <span></span>, unable to see the half-truths behind the <span></span>. By trying to master fate, you may bring yourself to <span></span>. Fate is the ones you love, what you plan and <span></span> to do with your life, and the idea of <span></span> friendship. <span></span> for example is joined with fate. It happens without notice. It may seem that we were fated to <span></span>, though it is difficult to say. Do not fret, for meeting your <span></span> is fate, and becoming part of your <span></span> is a choice. Falling in love with <span></span> however, is far beyond the cosmos, and will only bring you <span></span>.
+        Many <span></span> try to master fate, to make it conform to what they <span></span>. But, of course, fate doesn't work that way. By trying to <span></span> fate once, you put yourself in the position of having to <span></span> fate always. At every instant, you will struggle against those <span></span> of the pre-conceived <span></span> that don't favor your <span></span>. Ultimately, you may become so <span></span> with your fate that you seek <span></span> : you will be <span></span>, unable to see the half-truths behind the <span></span>. By trying to master fate, you may bring yourself to <span></span>. Fate is what you plan and <span></span> to do with your life, and the idea of <span></span> friendship. <span></span> is joined with fate. It may seem that we were fated to <span></span>, though it is difficult to say. Do not fret, for meeting your <span></span> is fate, and becoming part of your <span></span> is a choice. Falling in love with <span></span> however, is far beyond the cosmos, and will only bring you <span></span>.
       </p>
 
       <p id="destinyText" class="hidden">
-        <em>A one-act play to be performed by two <span></span> in this room</em>.<br>PATIENT: Thank you so very much for seeing me, Doctor <span></span>, on such <span></span> notice.<br>DENTIST: What is your problem, young <span></span>?<br>PATIENT: I have a pain in my upper <span></span>, which is giving me a severe <span></span> ache.<br>DENTIST: Let me take a look. Open your <span></span> wide. Good. Now I'm going to tap your <span></span> with my <span></span>.<br>PATIENT: Shouldn't you give me a/an <span></span> killer?<br>DENTIST: It's not necessary yet. <span></span>! I think I see a/an <span></span> in your upper <span></span>.<br>PATIENT: Are you going to pull my <span></span> out?<br>DENTIST: No, I'm going to <span></span> your tooth and put in a temporary <span></span>.<br>PATIENT: When do I come back for the <span></span> filling?<br>DENTIST: A day after I cash your <span></span>.
+        It is <span></span>, for you may have longed to enter the world of <span></span>. Now you see it filled with<span></span>, with <span></span> and <span></span>, with those who would <span></span> all around them. Yet, enter it you must, for it is a destiny laid on each of us. True, you have seen these <span></span>. But there are equal parts of <span></span> and <span></span>. For each of us comes a time when we must be more than what we are. Is there not enough <span></span> in living the days given to us? You should know there is <span></span> in simply being among those we <span></span> and the things we <span></span>, and <span></span>, too. But, alas, in most of us good and bad are closely woven as the <span></span> on a <span></span>. Had you chosen to <span></span>, you would ever wonder whether your choice was made through <span></span> or following the wishes of your own <span></span>. You see this is as it must be, and the <span></span> laid upon you.
       </p>
 
-    <button id="reset">Try Again?</button>
+    <div class="end_btn">
+      <button id="reset">Try Again?</button>
+      <button id="save">Save</button>
+    </div>
 
       <script src="main.js"></script>
+      <script src="https://superal.github.io/canvas2image/canvas2image.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
   </body>
 </html>
