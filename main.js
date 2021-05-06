@@ -110,7 +110,6 @@ getFormButton.addEventListener("click", function(){
     document.getElementById('sparkle').className = "hidden";
     document.getElementById('frame_final').className = "hidden";
     document.getElementById('frame_input').className = "show";
-    document.getElementById('sky').className = "show";
 
 	storyForm.classList.remove("hidden");
 });
@@ -130,8 +129,6 @@ chooseAgain.addEventListener("click", function(){
 
 getStoryButton.addEventListener("click", function(){
 	storyVisible = true;
-
-	document.body.style.background = "black";
 
 	document.getElementById('frame_input').className = "hidden";
 	document.getElementById('frame_final').className = "show";

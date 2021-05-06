@@ -3,33 +3,12 @@
 body {
 	margin: 0;
 	padding: 0;
-	height: 56.25rem;
-	width: 90rem;
-	overflow: scroll;
-}
-
-#canvas {
-   overflow: hidden;
-   position: absolute;
-   top: 0;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   height: 900px;
-}
-
-#canvas #sky {
-   height: 300%;
-   width: 300%;
-   position: absolute;
-   top: -100%;
-   left: -100%;
-   margin-top: 50%;
-   background-color: darkblue;
-   background: -webkit-radial-gradient(center, #5B1C17 0%, #000 60%);
-   -webkit-animation: rotate 250s infinite linear;
-   -webkit-backface-visibility: hidden;
-   -webkit-transform-style: preserve-3d;
+  overflow: scroll;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: black; /* for browsers that don't support gradients*/
+  background-image: -webkit-linear-gradient( #000 20%, #5B1C17 70%);
 }
 
 
@@ -83,7 +62,7 @@ body {
 
 
 h1{
-	font-family: Flower Power;
+	font-family: flower-power, sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 4.375rem;
@@ -92,8 +71,9 @@ h1{
 }
 
 p{
-	font-family: Sanvito Pro;
-	font-weight: 600;
+  font-family: sanvito-pro, sans-serif;
+  font-weight: 600;
+  font-style: normal;
 	font-size: 1.8rem;
 	line-height: auto;
 }
@@ -120,8 +100,9 @@ span {
 select {
 	border: none;
 	background: seashell;
-	font-family: Sanvito Pro;
-	font-weight: 600;
+  font-family: sanvito-pro, sans-serif;
+  font-weight: 600;
+  font-style: normal;
 	font-size: 2.25rem;
 	line-height: 3.125rem;
 	padding: 0.125rem;
@@ -130,7 +111,9 @@ select {
 
 input {
 	border: none;
-	font-family: Sanvito Pro;
+  font-family: sanvito-pro, sans-serif;
+  font-weight: 600;
+  font-style: normal;
 	font-size: 1.5rem; 
 	width: 13rem;
 	text-align: center;
@@ -142,7 +125,7 @@ button {
   background-color: #D6C79A;
   border: none;
 
-  font-family: Flower Power;
+  font-family: flower-power, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.4rem;
@@ -194,8 +177,9 @@ button:hover {
 }
 
 #labels{
-	font-family: Sanvito Pro;
+	font-family: sanvito-pro, sans-serif;
 	font-weight: 600;
+  font-style: normal;
 	font-size: 1.8rem;
 	line-height: 2.2rem;
 	text-align: center;
