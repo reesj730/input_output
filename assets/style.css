@@ -31,9 +31,9 @@ body {
 }
 
 #frame_final{
-	position: absolute;
-	width: 90rem;
-	height: 56.25rem;
+  position: absolute;
+  width: 90rem;
+  height: 56.25rem;
 }
 
 #crystal_ball{
@@ -196,8 +196,8 @@ button:hover {
 
 #finishedStory{
 	position: absolute;
+  top: 12.5rem;
 	left: 20rem;
-	top: 12.5rem;
 	width: 50rem;
 }
 
